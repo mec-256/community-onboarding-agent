@@ -96,8 +96,3 @@ This app is designed to deploy on Render using the included `render.yaml` config
 
 **Agentic-Slack-Onboarder** is a production-ready Slack onboarding assistant that uses Slack Bolt, AI reasoning, GitHub enrichment, and PostgreSQL persistence to create a personalized onboarding experience for new community members.
 
-## Notes
-
-- Keep `.env` secrets private.
-- Use the `README.md` and `docs/architecture.svg` image to demonstrate the architecture visually.
-- Add your live Render URL to your resume or interview portfolio once deployed.
