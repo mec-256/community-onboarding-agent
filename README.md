@@ -99,7 +99,7 @@ This live service demonstrates the app running on Render and connected to the ex
 ## Slack Usage and Demo
 
 ### Test demo
-- Sent a test user `johndoes` through the onboarding flow.
+- Sent a test user `johndoe` through the onboarding flow.
 - The bot generated a structured analysis with fit score, insights, and recommendations.
 - This proves the end-to-end Slack event flow is working.
 
@@ -113,7 +113,7 @@ This live service demonstrates the app running on Render and connected to the ex
 #### Demo 1: Test applicant `johndoes`
 ![Slack Demo - johndoes](docs/demo-johndoes.png)
 
-#### Demo 2: Real friend signup
+#### Demo 2: Real User signup
 ![Slack Demo - real user school ID](docs/demo-realuser.png)
 
 > Save your screenshot images in `docs/demo-johndoes.png` and `docs/demo-realuser.png` to make them visible here.
