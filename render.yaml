@@ -1,7 +1,3 @@
-databases:
-  - name: slack-agent-db
-    plan: free
-
 services:
   - type: web
     name: slack-ai-agent
@@ -15,9 +11,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        fromDatabase:
-          name: slack-agent-db
-          property: connectionString
+        value: postgresql://slackdb_xdy3_user:V7cLBIalwsFSTn853h0XXmYBN09R5p4T@dpg-d930dlegvqtc739ntmi0-a.singapore-postgres.render.com/slackdb_xdy3
       - key: SLACK_BOT_TOKEN
         sync: false
       - key: SLACK_APP_TOKEN
