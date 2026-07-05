@@ -88,6 +88,26 @@ You should see a JSON response like:
 {"status":"healthy","timestamp":"..."}
 ```
 
+## Live Demo
+
+The project is deployed and available at:
+
+- https://slack-ai-agent-ttxk.onrender.com
+
+This live service demonstrates the app running on Render and connected to the existing PostgreSQL database.
+
+## Slack Usage and Demo
+
+### Test demo
+- Sent a test user `johndoes` through the onboarding flow.
+- The bot generated a structured analysis with fit score, insights, and recommendations.
+- This proves the end-to-end Slack event flow is working.
+
+### Real-world demo
+- Tested with a friend’s real school ID during a live onboarding scenario.
+- The system attempted data enrichment but returned limited company info because the user is not currently attached to a company.
+- This highlights the project’s real behavior and shows it handles real-world data gaps gracefully.
+
 ## Deployment
 
 This app is designed to deploy on Render using the included `render.yaml` configuration. The service uses an existing PostgreSQL database via `DATABASE_URL` and connects secrets through Render environment variables.
