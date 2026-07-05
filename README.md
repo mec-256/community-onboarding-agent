@@ -108,6 +108,16 @@ This live service demonstrates the app running on Render and connected to the ex
 - The system attempted data enrichment but returned limited company info because the user is not currently attached to a company.
 - This highlights the project’s real behavior and shows it handles real-world data gaps gracefully.
 
+### Screenshots
+
+#### Demo 1: Test applicant `johndoes`
+![Slack Demo - johndoes](docs/demo-johndoes.png)
+
+#### Demo 2: Real friend signup
+![Slack Demo - real user school ID](docs/demo-realuser.png)
+
+> Save your screenshot images in `docs/demo-johndoes.png` and `docs/demo-realuser.png` to make them visible here.
+
 ## Deployment
 
 This app is designed to deploy on Render using the included `render.yaml` configuration. The service uses an existing PostgreSQL database via `DATABASE_URL` and connects secrets through Render environment variables.
