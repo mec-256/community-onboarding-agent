@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #333; }
+    .label { font: 14px sans-serif; fill: #111; }
+    .node { fill: #f8f9fa; stroke: #ccd6dd; stroke-width: 2; rx: 18; ry: 18; }
+    .arrow { stroke: #4f46e5; stroke-width: 3; marker-end: url(#arrowhead); }
+    .box-text { font: 14px sans-serif; fill: #111; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4f46e5" />
+    </marker>
+  </defs>
+  <text x="50" y="40" class="title">Agentic-Slack-Onboarder Architecture</text>
+  <rect x="40" y="70" width="220" height="100" class="node" />
+  <text x="70" y="100" class="box-text">Slack Event</text>
+  <text x="70" y="122" class="box-text">- team_join</text>
+  <text x="70" y="144" class="box-text">- member_joined_channel</text>
+
+  <rect x="290" y="70" width="220" height="100" class="node" />
+  <text x="320" y="100" class="box-text">Express API</text>
+  <text x="320" y="122" class="box-text">/health + /test</text>
+
+  <rect x="540" y="70" width="220" height="100" class="node" />
+  <text x="570" y="100" class="box-text">Slack Bot</text>
+  <text x="570" y="122" class="box-text">Bolt + Socket Mode</text>
+
+  <line x1="260" y1="120" x2="290" y2="120" class="arrow" />
+  <line x1="430" y1="120" x2="540" y2="120" class="arrow" />
+
+  <rect x="40" y="220" width="220" height="100" class="node" />
+  <text x="70" y="250" class="box-text">Research Data</text>
+  <text x="70" y="272" class="box-text">- GitHub API</text>
+  <text x="70" y="294" class="box-text">- Company Website</text>
+
+  <rect x="290" y="220" width="220" height="100" class="node" />
+  <text x="320" y="250" class="box-text">AI Agent</text>
+  <text x="320" y="272" class="box-text">LangGraph / CrewAI</text>
+  <text x="320" y="294" class="box-text">Groq LLM</text>
+
+  <rect x="540" y="220" width="220" height="100" class="node" />
+  <text x="570" y="250" class="box-text">PostgreSQL</text>
+  <text x="570" y="272" class="box-text">Render DB</text>
+  <text x="570" y="294" class="box-text">Member analysis</text>
+
+  <line x1="150" y1="200" x2="150" y2="220" class="arrow" />
+  <line x1="510" y1="120" x2="510" y2="220" class="arrow" />
+  <line x1="430" y1="270" x2="540" y2="270" class="arrow" />
+
+  <rect x="290" y="350" width="220" height="100" class="node" />
+  <text x="320" y="380" class="box-text">Slack Output</text>
+  <text x="320" y="402" class="box-text">- Channel post</text>
+  <text x="320" y="424" class="box-text">- Fit score + insights</text>
+
+  <line x1="660" y1="270" x2="610" y2="350" class="arrow" />
+
+  <rect x="40" y="350" width="220" height="100" class="node" />
+  <text x="70" y="380" class="box-text">Render Deployment</text>
+  <text x="70" y="402" class="box-text">- GitHub sync</text>
+  <text x="70" y="424" class="box-text">- Health checks</text>
+
+  <line x1="150" y1="320" x2="150" y2="350" class="arrow" />
+</svg>
